@@ -2,19 +2,19 @@
   "quizData": 
     [
       { "question": "typeof null",
-        "answer": "object"
+        "answer": "\'object\'"
       },
       {
         "question": "typeof [1, 2, 'Four', 8]",
-        "answer": "object"
+        "answer": "\'object\'"
       },
       {
         "question": "typeof true",
-        "answer": "boolean"
+        "answer": "\'boolean\'"
       },
       {
         "question": "typeof 3",
-        "answer": "number"
+        "answer": "\'number\'"
       }
     ]
 }
