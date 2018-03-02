@@ -20,7 +20,8 @@ function renderPage(response) {
       <div>${data.answer}</div>
       <div>==============</div>
     `;
-
+    console.log(data.answer);
+    
     cardContainer.insertAdjacentHTML('beforeend', html);
   });
   
