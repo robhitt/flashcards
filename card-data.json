@@ -1,0 +1,16 @@
+{
+  quizData: 
+    [
+      { question: "typeof null",
+        answer: function() {
+          return typeof null;
+        }
+      },
+      {
+        question: "typeof [1, 2, 'Four', 8]",
+        answer: function() {
+          return typeof [1, 2, 'Four', 8];
+        }
+      }
+    ]
+}

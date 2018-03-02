@@ -1,2 +1,3 @@
 # flashcards
-Flash Card Application
+Flash Cards Application
+- Test HTML & CSS Knowledge
