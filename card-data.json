@@ -1,16 +1,20 @@
 {
-  quizData: 
+  "quizData": 
     [
-      { question: "typeof null",
-        answer: function() {
-          return typeof null;
-        }
+      { "question": "typeof null",
+        "answer": "object"
       },
       {
-        question: "typeof [1, 2, 'Four', 8]",
-        answer: function() {
-          return typeof [1, 2, 'Four', 8];
-        }
+        "question": "typeof [1, 2, 'Four', 8]",
+        "answer": "object"
+      },
+      {
+        "question": "typeof true",
+        "answer": "boolean"
+      },
+      {
+        "question": "typeof 3",
+        "answer": "number"
       }
     ]
 }
