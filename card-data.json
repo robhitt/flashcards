@@ -49,20 +49,24 @@
     {
       "question": "How do you add a class name to an element?",
       "answer": "<p>element.classList.add(\"class name\")</p><p>element.classList.remove(\"class name\")</p><p>element.classList.contains(\"class name\")</p><p>element.classList.replace(\"old class\", \"new class\")</p>"
+    },
+    {
+      "question": "What is the difference between currentTarget and target in javascript?",
+      "answer": "Target is the element that triggered the event (e.g., the user clicked on) and currentTarget is the element that the event listener is attached to."
     }
   ],
   "cssQuestions": [
     {
       "question": "What does .child > li do?",
-      "answer": "This children selector only selects all DIRECT <li> children"
+      "answer": "This children selector only selects all DIRECT \\<li\\> children"
     },
     {
       "question": "What does h2 ~ p do?",
-      "answer": "Selects ALL ADJACENT <p> elements, not just the first adjacent"
+      "answer": "Selects ALL ADJACENT \\<p\\> elements, not just the first adjacent"
     },
     {
-      "question": "What does h2 + p",
-      "answer": "Selects only the FIRST ADJACENT <p> element"
+      "question": "What does h2 + p do?",
+      "answer": "Selects only the FIRST ADJACENT \\<p\\> element"
     },
     {
       "question": "What does [lang|=en] do?",

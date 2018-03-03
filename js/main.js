@@ -1,24 +1,31 @@
 window.addEventListener('load', app)
+let initialPass = true;
 
-function app() {
+function app(notApplicable, curriculum = "js") {
   const url = "https://robhitt.github.io/flashcards/card-data.json";
   fetch(url, {method: "GET"})
     .then( (response) => {
-      
       return response.json()
     })
-    .then( response => renderPage(response) )
+    .then( response => renderPage(response, curriculum) )
     .catch( err => console.log(err));
 }
 
-function renderPage(response) {
+function renderPage(response, curriculum) {
   const cardContainer = document.querySelector(".container");
-  let javascriptQuestions = response.javascriptQuestions;
-  javascriptQuestions = shuffleArray(javascriptQuestions);
+  cardContainer.innerHTML = "";
+  let currentCurriculum;
+  
+  if (curriculum === "js") {
+    currentCurriculum = response.javascriptQuestions;
+  } else if (curriculum === "css") {
+    currentCurriculum = response.cssQuestions;
+  }
+
+  currentCurriculum = shuffleArray(currentCurriculum);
   let html;
 
-  javascriptQuestions.forEach( (data, index) => {
-    
+  currentCurriculum.forEach( (data, index) => {
     html = `
       <form class="card card--hidden card-index${index}" data-id=${index}>
         <input type="hidden" name="cardId" value="${index}">
@@ -34,7 +41,7 @@ function renderPage(response) {
       </form>
     `;
     cardContainer.insertAdjacentHTML('beforeend', html);
-
+    
     /************ Add Question / Answer Button Toggle Event Listener ************/
     const answerButton = document.querySelector(`.card__answer-id-${index}`);
     answerButton.addEventListener("click", toggleCard);
@@ -110,7 +117,7 @@ function renderPage(response) {
     if (currentId >= cardLength) {
       alert("There are no more questions, we'll start from the beginning");
       document.querySelector(".container").innerHTML = '';
-      app();
+      app("hi");
     }  else {
       // Prepare next card element and i.d. of next card
       let nextId = currentId + 1;
@@ -120,4 +127,34 @@ function renderPage(response) {
       nextCard.classList.remove("card--hidden");
     }
   }
+
+    /************ SELECT CURRICULUM ************/
+    const jsButton = document.querySelector(".curriculum__js");
+    const cssButton = document.querySelector(".curriculum__css");
+    if (initialPass) {
+      jsButton.addEventListener("click", toggleCurriculum);
+      cssButton.addEventListener("click", toggleCurriculum);
+      initialPass = false;
+    }
+
+    function toggleCurriculum(event) {
+      let curriculum = event.target.dataset.curriculum;
+      console.log(curriculum);
+
+      if (curriculum === "js") {
+        if (!jsButton.classList.contains("curriculum_button--active")) {
+          jsButton.classList.add("curriculum_btn--active");
+          cssButton.classList.remove("curriculum_btn--active");
+          app("hi", curriculum);
+        }
+      } else if (curriculum === "css") {
+        if (!cssButton.classList.contains("curriculum_button--active")) {
+          jsButton.classList.remove("curriculum_btn--active");
+          cssButton.classList.add("curriculum_btn--active");
+          app("hi", curriculum);
+        }
+      }
+    
+  }
 }
+
