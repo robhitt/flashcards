@@ -53,12 +53,16 @@
     {
       "question": "What is the difference between currentTarget and target in javascript?",
       "answer": "Target is the element that triggered the event (e.g., the user clicked on) and currentTarget is the element that the event listener is attached to."
-    }
+    },
+    {
+      "question": "What is some functionality of \"use strict\";?",
+      "answer": "<ol><li>No undeclared global variable assignment</li>Can not use \"delete\" syntax<li>Can not define a key more than once in an object</li><li>\"eval\" syntax is will throw an error</li><li>can not overwrite \"arguments\" syntax</li></ol>"
+    },
   ],
   "cssQuestions": [
     {
       "question": "What does .child > li do?",
-      "answer": "This children selector only selects all DIRECT \"li\"> children"
+      "answer": "This children selector only selects all DIRECT \"li\" children"
     },
     {
       "question": "What does h2 ~ p do?",
@@ -69,7 +73,7 @@
       "answer": "Selects only the FIRST ADJACENT \"p\" element"
     },
     {
-      "question": "What does [lang|=en] do?",
+      "question": "What does [lang |= en] do?",
       "answer": "Select and styles elements, where the lang attribute's value starts with \"en\""
     }
   ]
