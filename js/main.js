@@ -12,9 +12,9 @@ function app() {
 }
 
 function renderPage(response) {
-  
-  const javascriptQuestions = response.javascriptQuestions;
   const cardContainer = document.querySelector(".container");
+  let javascriptQuestions = response.javascriptQuestions;
+  javascriptQuestions = shuffleArray(javascriptQuestions);
   let html;
 
   javascriptQuestions.forEach( (data, index) => {
@@ -40,24 +40,25 @@ function renderPage(response) {
     answerButton.addEventListener("click", toggleCard);
   });
 
-  let testArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
-  function shuffleArray(arr) {
-   let i = array.length,
+  /************ Shuffle Array of Questions on App load ************/
+  function shuffleArray(array) {
+   let i = array.length - 1,
        j,
        tempElement;
 
     while(i > 0) {
-      j = Math.floor(Math.random() * i);
-      tempElement = arr[j];
-      arr[j] = arr[i];
-      arr[i] = tempElement;
+      j = randomNumberGenerator(i);
+      tempElement = array[j];
+      array[j] = array[i];
+      array[i] = tempElement;
       i -= 1;
     }
-    console.log(arr);
+    
+    return array;
   }
 
-  function randomNumberGenerator() {
-    
+  function randomNumberGenerator(num) {
+    return Math.floor(Math.random() * num);
   }
 
   const allCards = document.querySelectorAll(".card");
@@ -103,8 +104,6 @@ function renderPage(response) {
     // Grab current card element and i.d. of current card
     let currentId = parseInt(event.currentTarget.dataset.id);
     const currentCard = document.querySelector(`.card-index${currentId.toString()}`);
-    
-    console.log({currentId});
 
     // check if at end of questions
     let cardLength = document.querySelectorAll(".card__next").length - 1;
