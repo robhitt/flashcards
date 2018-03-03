@@ -58,15 +58,15 @@
   "cssQuestions": [
     {
       "question": "What does .child > li do?",
-      "answer": "This children selector only selects all DIRECT \\<li\\> children"
+      "answer": "This children selector only selects all DIRECT \"li\"> children"
     },
     {
       "question": "What does h2 ~ p do?",
-      "answer": "Selects ALL ADJACENT \\<p\\> elements, not just the first adjacent"
+      "answer": "Selects ALL ADJACENT \"p\" elements, not just the first adjacent"
     },
     {
       "question": "What does h2 + p do?",
-      "answer": "Selects only the FIRST ADJACENT \\<p\\> element"
+      "answer": "Selects only the FIRST ADJACENT \"p\" element"
     },
     {
       "question": "What does [lang|=en] do?",
