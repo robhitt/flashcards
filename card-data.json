@@ -15,6 +15,26 @@
       {
         "question": "typeof 3",
         "answer": "\"number\""
+      },
+      {
+        "question": "typeof undefined",
+        "answer": "\"undefined\""
+      },
+      {
+        "question": "typeof Nan",
+        "answer": "\"number\""
+      },
+      {
+        "question": "typeof (typeof 1)",
+        "answer": "\"string\""
+      },
+      {
+        "question": "typeof new Date()",
+        "answer": "\"object\""
+      },
+      {
+        "question": "null",
+        "answer": "\"object\""
       }
     ]
 }

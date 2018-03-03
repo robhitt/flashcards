@@ -4,7 +4,6 @@ function app() {
   const url = "https://robhitt.github.io/flashcards/card-data.json";
   fetch(url, {method: "GET"})
     .then( (response) => {
-      // console.log(response.status);
       return response.json()
     })
     .then( response => renderPage(response) )
@@ -35,7 +34,6 @@ function renderPage(response) {
     cardContainer.insertAdjacentHTML('beforeend', html);
 
     /************ Add Question / Answer Button Toggle Event Listener ************/
-    
     const answerButton = document.querySelector(`.card__answer-id-${index}`);
     answerButton.addEventListener("click", toggleCard);
   });
