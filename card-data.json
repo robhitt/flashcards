@@ -22,6 +22,7 @@
       },
       {
         "question": "typeof Nan",
+<<<<<<< HEAD
         "answer": "\"number\""
       },
       {
@@ -35,6 +36,21 @@
       {
         "question": "null",
         "answer": "\"object\""
+=======
+        "answer": "number"
+      },
+      {
+        "question": "typeof (typeof 1)",
+        "answer": "string"
+      },
+      {
+        "question": "typeof new Date()",
+        "answer": "object"
+      },
+      {
+        "question": "null",
+        "answer": "object"
+>>>>>>> e0ed6157815a48a8a5536a706552f70181601bf6
       }
     ]
 }
