@@ -16,7 +16,7 @@
 
 .header {
   font-size: 42px;
-  margin-bottom: 15%;
+  margin-bottom: 30px;
 }
 
 .container {
@@ -61,17 +61,25 @@
   align-items: center;
 }
 .card__btn--style {
-  padding: 5px 10px;
+  padding: 10px 10px;
   border-radius: 5px;
   border: 2px solid grey;
   margin: 25px 5px 10px;
-  width: 70px;
+  width: 30%;
   color: grey;
   background-color: #fff;
   transition: .2s;
+  cursor: pointer;
 }
 
 .card__btn--style:hover {
   background-color: grey;
   color: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+  .card__question--text,
+  .card__question--answer {
+    font-size: 16px;
+  }
 }
