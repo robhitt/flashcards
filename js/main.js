@@ -17,6 +17,7 @@ function renderPage(response) {
   let html;
 
   quizData.forEach( (data, index) => {
+    
     html = `
       <form class="card card--hidden card-index${index}" data-id=${index}>
         <input type="hidden" name="cardId" value="${index}">
@@ -26,7 +27,7 @@ function renderPage(response) {
           <div class="card__question--answer card__question-answer-${index} card__question--hidden">${data.answer}</div>
         </div>
         <div class="card__navigation">
-          <button type="button" data-button-id="${index}" class="card__answer card__answer-id${index} card__btn--style">Answer</button>
+          <button type="button" data-button-id="${index}" class="card__answer card__answer-id-${index} card__btn--style">Answer</button>
           <button type="submit" class="card__next card__btn--style">Next</button>
         </div>
       </form>
@@ -34,7 +35,8 @@ function renderPage(response) {
     cardContainer.insertAdjacentHTML('beforeend', html);
 
     /************ Add Question / Answer Button Toggle Event Listener ************/
-    const answerButton = document.querySelector(`.card__answer-id${index}`);
+    
+    const answerButton = document.querySelector(`.card__answer-id-${index}`);
     answerButton.addEventListener("click", toggleCard);
   });
 
@@ -51,16 +53,17 @@ function renderPage(response) {
     let currentCardId = event.currentTarget.dataset.buttonId;
     let currentQuestion = document.querySelector(`.card__question-${currentCardId}`);
     let currentAnswer = document.querySelector(`.card__question-answer-${currentCardId}`);
-    
+    let answerButton = document.querySelector(`.card__answer-id-${currentCardId}`);
     
     if (answerVisible) {
       currentAnswer.classList.add("card__question--hidden");
       currentQuestion.classList.remove("card__question--hidden");
+      answerButton.textContent = "Answer";
       
     } else {
       currentQuestion.classList.add("card__question--hidden");
       currentAnswer.classList.remove("card__question--hidden");
-      
+      answerButton.textContent = "Question";
     }
   
     answerVisible = !answerVisible;
