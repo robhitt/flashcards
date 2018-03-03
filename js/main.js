@@ -4,6 +4,7 @@ function app() {
   const url = "https://robhitt.github.io/flashcards/card-data.json";
   fetch(url, {method: "GET"})
     .then( (response) => {
+      
       return response.json()
     })
     .then( response => renderPage(response) )
@@ -11,11 +12,12 @@ function app() {
 }
 
 function renderPage(response) {
-  const quizData = response.quizData;
+  
+  const javascriptQuestions = response.javascriptQuestions;
   const cardContainer = document.querySelector(".container");
   let html;
 
-  quizData.forEach( (data, index) => {
+  javascriptQuestions.forEach( (data, index) => {
     
     html = `
       <form class="card card--hidden card-index${index}" data-id=${index}>
@@ -37,6 +39,26 @@ function renderPage(response) {
     const answerButton = document.querySelector(`.card__answer-id-${index}`);
     answerButton.addEventListener("click", toggleCard);
   });
+
+  let testArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
+  function shuffleArray(arr) {
+   let i = array.length,
+       j,
+       tempElement;
+
+    while(i > 0) {
+      j = Math.floor(Math.random() * i);
+      tempElement = arr[j];
+      arr[j] = arr[i];
+      arr[i] = tempElement;
+      i -= 1;
+    }
+    console.log(arr);
+  }
+
+  function randomNumberGenerator() {
+    
+  }
 
   const allCards = document.querySelectorAll(".card");
   allCards.forEach( card => {
