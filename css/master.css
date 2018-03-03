@@ -24,7 +24,7 @@
   border-radius: 5px;
   border: 2px solid #000;
   padding: 20px 15px;
-  color: ##16423c;
+  color: #16423c;
   height: 40%;
   width: 60%
 }
@@ -48,7 +48,7 @@
 .card__question--answer {
   margin: 0 auto;
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .card__question--hidden {
