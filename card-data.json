@@ -57,7 +57,7 @@
     {
       "question": "What is some functionality of \"use strict\";?",
       "answer": "<ol><li>No undeclared global variable assignment</li>Can not use \"delete\" syntax<li>Can not define a key more than once in an object</li><li>\"eval\" syntax is will throw an error</li><li>can not overwrite \"arguments\" syntax</li></ol>"
-    },
+    }
   ],
   "cssQuestions": [
     {
