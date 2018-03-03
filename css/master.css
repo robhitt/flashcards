@@ -65,11 +65,12 @@
   border-radius: 5px;
   border: 2px solid grey;
   margin: 25px 5px 10px;
-  width: 30%;
+  width: 45%;
   color: grey;
   background-color: #fff;
   transition: .2s;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .card__btn--style:hover {
@@ -80,6 +81,10 @@
 @media only screen and (max-width: 500px) {
   .card__question--text,
   .card__question--answer {
+    font-size: 16px;
+  }
+
+  .card__btn--style {
     font-size: 16px;
   }
 }
