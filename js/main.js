@@ -89,7 +89,9 @@ function renderPage(response) {
     // check if at end of questions
     let cardLength = document.querySelectorAll(".card__next").length - 1;
     if (currentId >= cardLength) {
-      alert("There are no more questions");
+      alert("There are no more questions, we'll start from the beginning");
+      document.querySelector(".container").innerHTML = '';
+      app();
     }  else {
       // Prepare next card element and i.d. of next card
       let nextId = currentId + 1;
