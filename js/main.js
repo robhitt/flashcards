@@ -122,6 +122,8 @@ function renderPage(response, curriculum) {
     if (currentId >= cardLength) {
       alert("There are no more questions, we'll start from the beginning");
       document.querySelector(".container").innerHTML = '';
+      jsButton.classList.add("curriculum_btn--active");
+        cssButton.classList.remove("curriculum_btn--active");
       app("hi");
     } else {
       // Prepare next card element and i.d. of next card

@@ -32,12 +32,32 @@
       "answer": "\"object\""
     },
     {
+      "question": "Resule of (1 + undefined)",
+      "answer": "1undefined"
+    },
+    {
+      "question": "<p>Result of the below</p><p>let kardashian = true;</p><p>kardashian + 0</p><p>kardashian + ' kanye'</p><p>kardashian + true</p><p>kardashian + false</p>",
+      "answer": "<p>var kardashian = true;</p><p>kardashian + 0 === 1</p><p>kardashian + 'kanye' === 'kardashian kanye'</p><p>kardashian + true === 2</p><p>kardashian + false === 1</p>"
+    },
+    {
       "question": "Function to test if something is a not a number",
       "answer": "isNaN(argument) Note: Includes Ints and Floats"
     },
     {
       "question": "Function to test if something is an array",
       "answer": "Array.isArray(argument)"
+    },
+    {
+      "question": "Old school way to check if variable is an Object, Array, Null, or Date",
+      "answer": "<p>if (Object.prototype.toString.call( [1,2,'hi'] ) === '[object Array]) { execute if true }</p><p>'[object Object]' - '[object Null]' - '[object Date]'</p>"
+    },
+    {
+      "question": "How to empty an array by reference?",
+      "answer": "<p>array.length = 1</p><p>array.splice(0, array.length)</p>"
+    },
+    {
+      "question": "Remove item from an object",
+      "answer": "<p>var test = {'red':'#FF0000', 'blue':'#0000FF'};</p><p>delete test.blue;</p>"
     },
     {
       "question": "What does Math.random() return?",
@@ -56,7 +76,11 @@
     },
     {
       "question": "What is some functionality of \"use strict\";?",
-      "answer": "<ol><li>No undeclared global variable assignment</li><li>Can not use \"delete\" syntax</li><li>Can not define a key more than once in an object</li><li>\"eval\" syntax is will throw an error</li><li>can not overwrite \"arguments\" syntax</li></ol>"
+      "answer": "<p>-No undeclared global variable assignment</p><p>-Can not use \"delete\" syntax other than on object</p><p>-Can not define a key more than once in an object</p><p>-\"eval\" syntax is will throw an error</p><p>-Can not overwrite \"arguments\" syntax</p>"
+    },
+    {
+      "question": "What is a closure",
+      "answer": "A closure is a function defined inside another function (called the parent function), and has access to variables that are declared and defined in the parent function scope."
     }
   ],
   "cssQuestions": [
