@@ -117,6 +117,7 @@ body {
   .card__question--text,
   .card__question--answer {
     font-size: 16px;
+    overflow: auto;
   }
 
   .card__btn--style {

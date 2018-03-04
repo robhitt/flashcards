@@ -161,4 +161,13 @@ function renderPage(response, curriculum) {
       }
     }
   }
+
+  window.addEventListener("keydown", keySelector);
+  function keySelector(event) {
+    console.log(event.which);
+    if (event.which === 65) {
+      toggleCard();
+    } 
+  }
 }
+

@@ -32,12 +32,12 @@
       "answer": "\"object\""
     },
     {
-      "question": "Resule of (1 + undefined)",
+      "question": "Result of (1 + undefined)",
       "answer": "1undefined"
     },
     {
-      "question": "<p>Result of the below</p><p>let kardashian = true;</p><p>kardashian + 0</p><p>kardashian + ' kanye'</p><p>kardashian + true</p><p>kardashian + false</p>",
-      "answer": "<p>var kardashian = true;</p><p>kardashian + 0 === 1</p><p>kardashian + 'kanye' === 'kardashian kanye'</p><p>kardashian + true === 2</p><p>kardashian + false === 1</p>"
+      "question": "<p>Result of the below</p><p>let kardashian = true;</p><p>1. kardashian + 0</p><p>2. kardashian + ' kanye'</p><p>3. kardashian + true</p><p>4. kardashian + false</p>",
+      "answer": "<p>let kardashian = true;</p><p>1. kardashian + 0 === 1</p><p>2. kardashian + 'kanye' === 'kardashian kanye'</p><p>3. kardashian + true === 2</p><p>4. kardashian + false === 1</p>"
     },
     {
       "question": "Function to test if something is a not a number",
@@ -53,7 +53,7 @@
     },
     {
       "question": "How to empty an array by reference?",
-      "answer": "<p>array.length = 1</p><p>array.splice(0, array.length)</p>"
+      "answer": "<p>1. array.length = 1</p><p>1. array.splice(0, array.length)</p>"
     },
     {
       "question": "Remove item from an object",
