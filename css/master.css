@@ -72,6 +72,7 @@ body {
   height: 60%;
   display: flex;
   align-items: center;
+  overflow-y: auto;
 }
 
 .card__question--text,
@@ -117,7 +118,6 @@ body {
   .card__question--text,
   .card__question--answer {
     font-size: 16px;
-    overflow: auto;
   }
 
   .card__btn--style {
