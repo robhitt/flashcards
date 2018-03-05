@@ -60,7 +60,7 @@ body {
 }
 
 .card {
-  border-radius: 5px;
+  /* border-radius: 5px; */
   height: 100%;
 }
 
@@ -73,6 +73,7 @@ body {
   display: flex;
   align-items: center;
   overflow-y: auto;
+  padding-top: 14px;
 }
 
 .card__question--text,
