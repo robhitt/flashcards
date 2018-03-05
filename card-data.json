@@ -36,8 +36,8 @@
       "answer": "1undefined"
     },
     {
-      "question": "<p>Result of the below</p><p>let kardashian = true;</p><p>1. kardashian + 0</p><p>2. kardashian + ' kanye'</p><p>3. kardashian + true</p><p>4. kardashian + false</p>",
-      "answer": "<p>let kardashian = true;</p><p>1. kardashian + 0 === 1</p><p>2. kardashian + 'kanye' === 'kardashian kanye'</p><p>3. kardashian + true === 2</p><p>4. kardashian + false === 1</p>"
+      "question": "<p>Result of the below</p><p>let bool = true;</p><p>1. bool + 0</p><p>2. bool + ' kanye'</p><p>3. bool + true</p><p>4. bool + false</p>",
+      "answer": "<p>let bool = true;</p><p>1. bool + 0 === 1</p><p>2. bool + 'kanye' === 'bool kanye'</p><p>3. bool + true === 2</p><p>4. bool + false === 1</p>"
     },
     {
       "question": "Function to test if something is a not a number",
@@ -49,11 +49,19 @@
     },
     {
       "question": "Old school way to check if variable is an Object, Array, Null, or Date",
-      "answer": "<p>if (Object.prototype.toString.call( [1,2,'hi'] ) === '[object Array]) { execute if true }</p><p>'[object Object]' - '[object Null]' - '[object Date]'</p>"
+      "answer": "<p>if (Object.prototype.toString.call( [1,2,'hi'] ) === '[object Array]) { execute if true }</p><p>Possible results: '[object Object]','[object Null]', '[object Date]'</p>"
+    },
+    {
+      "question": "Find length of an Object",
+      "answer": "<p>'Object.keys(obj)' will return all properties of an object into an array</p><p>So you can do Object.keys(obj).length to find the length</p>"
     },
     {
       "question": "How to empty an array by reference?",
       "answer": "<p>1. array.length = 1</p><p>1. array.splice(0, array.length)</p>"
+    },
+    {
+      "question": "What does indexOf(searchValue) return?",
+      "answer": "'array.indexOf(searchvalue, start)' returns the position of the first occurrence of a specified value in an array or string if not found -1"
     },
     {
       "question": "Remove item from an object",
@@ -62,7 +70,8 @@
     {
       "question": "What does Math.random() return?",
       "answer": "Floating-point random number btw 0 (inclusive) and 1 (exclusive)"
-    },{
+    },
+    {
       "question": "In JS how to do you create a new element?",
       "answer": "document.createElement(\"string\");"
     },
@@ -81,6 +90,38 @@
     {
       "question": "What is a closure",
       "answer": "A closure is a function defined inside another function (called the parent function), and has access to variables that are declared and defined in the parent function scope."
+    },
+    {
+      "question": "How do you add new method to a Class after the Class has been created?",
+      "answer": "prototype is the key here: 'ClassName.prototype.newMethod = function() { return `How are you, ${this.fullName}` }'"
+    },
+    {
+      "question": "What in Javascript is not an object?",
+      "answer": "Primitive types string, boolean, number and also null and unassigned"
+    },
+    {
+      "question": "What is an object literal?",
+      "answer": "An object created using {} instead of Object.create"
+    },
+    {
+      "question": "What would you copy data from one obect to another?",
+      "answer": "const object2 = Object.assign({}, object1);"
+    },
+    {
+      "question": "What are the 9 native object constructors in JS?",
+      "answer": "Number, String, Boolean, Object, Array, Function, Date, Regex, Error"
+    },
+    {
+      "question": "What is a constructor?",
+      "answer": "A constructor is a function used for initializing new objects, and you use the new keyword to call the constructor. 'function Account() {}' ES6 uses 'class'"
+    },
+    {
+      "question": "How to add a method to a constructor after the constructor is already created?",
+      "answer": "constructorName.prototype.fullName = function() { return `${this.firstName} ${this.lastName}`"
+    },
+    {
+      "question": "Show an example to inherit from another class/constructor/object",
+      "answer": "EightGrader.prototype = Object.create(Student.prototype)"
     }
   ],
   "cssQuestions": [
