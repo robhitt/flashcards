@@ -49,7 +49,7 @@
     },
     {
       "question": "Old school way to check if variable is an Object, Array, Null, or Date",
-      "answer": "<p>if (Object.prototype.toString.call( [1,2,'hi'] ) === '[object Array]) { execute if true }</p><p>Possible results: '[object Object]','[object Null]', '[object Date]'</p>"
+      "answer": "<p>if (Object.prototype.toString.call( [1,2,'hi'] ) === '[object Array]) {</p> <p>execute if true</p> <p>}</p><p>Possible results: '[object Object]','[object Null]', '[object Date]'</p>"
     },
     {
       "question": "Find length of an Object",
