@@ -89,7 +89,7 @@
     },
     {
       "question": "What is a closure",
-      "answer": "A closure is a function defined inside another function (called the parent function), and has access to variables that are declared and defined in the parent function scope."
+      "answer": "A closure is a function defined inside another function that has access to variables that are declared and defined in the parent function scope. The concept of closure is the idea that functions retain their scope even if they are passed around and called outside of that scope."
     },
     {
       "question": "How do you add new method to a Class after the Class has been created?",
@@ -122,6 +122,22 @@
     {
       "question": "Show an example to inherit from another class/constructor/object",
       "answer": "EightGrader.prototype = Object.create(Student.prototype)"
+    },
+    {
+      "question": "How would one interate through the properties of an object",
+      "answer": "<p>for (let prop in name) {</p> <p>console.log(name[prop]);</p> <p>{</p>"
+    },
+    {
+      "question": "How to check if property exists on an object",
+      "answer": "<p>personObj.hasOwnProperty('name');</p> <p>returns a boolean</p>"
+    },
+    {
+      "question": "What is scope?",
+      "answer": "variable access - when a piece of code is running it is what variables we have access to"
+    },
+    {
+      "question": "What is context?",
+      "answer": "this - the value of thsi is the context"
     }
   ],
   "cssQuestions": [
