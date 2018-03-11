@@ -32,12 +32,12 @@
       "answer": "\"object\""
     },
     {
-      "question": "Result of (1 + undefined)",
+      "question": "Result of (1 + 'undefined')",
       "answer": "1undefined"
     },
     {
       "question": "<p>Result of the below</p><p>let bool = true;</p><p>1. bool + 0</p><p>2. bool + ' kanye'</p><p>3. bool + true</p><p>4. bool + false</p>",
-      "answer": "<p>let bool = true;</p><p>1. bool + 0 === 1</p><p>2. bool + 'kanye' === 'bool kanye'</p><p>3. bool + true === 2</p><p>4. bool + false === 1</p>"
+      "answer": "<p>let bool = true;</p><p>1. bool + 0 === 1</p><p>2. bool + 'kanye' === 'truekanye'</p><p>3. bool + true === 2</p><p>4. bool + false === 1</p>"
     },
     {
       "question": "Function to test if something is a not a number",
@@ -57,7 +57,7 @@
     },
     {
       "question": "How to empty an array by reference?",
-      "answer": "<p>1. array.length = 1</p><p>1. array.splice(0, array.length)</p>"
+      "answer": "<p>1. array.length = 0</p><p>2. array.splice(0, array.length)</p>"
     },
     {
       "question": "What does indexOf(searchValue) return?",
@@ -72,7 +72,7 @@
       "answer": "Floating-point random number btw 0 (inclusive) and 1 (exclusive)"
     },
     {
-      "question": "In JS how to do you create a new element?",
+      "question": "In JS how do you create a new element?",
       "answer": "document.createElement(\"string\");"
     },
     {
@@ -137,7 +137,7 @@
     },
     {
       "question": "What is context?",
-      "answer": "this - the value of thsi is the context"
+      "answer": "this - the value of this is the context"
     }
   ],
   "cssQuestions": [
