@@ -104,7 +104,7 @@
       "answer": "An object created using {} instead of Object.create"
     },
     {
-      "question": "What would you copy data from one obect to another?",
+      "question": "How would you copy data from one obect to another?",
       "answer": "const object2 = Object.assign({}, object1);"
     },
     {
@@ -124,7 +124,7 @@
       "answer": "EightGrader.prototype = Object.create(Student.prototype)"
     },
     {
-      "question": "How would one interate through the properties of an object",
+      "question": "How would one iterate through the properties of an object",
       "answer": "<p>for (let prop in name) {</p> <p>console.log(name[prop]);</p> <p>{</p>"
     },
     {
