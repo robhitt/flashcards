@@ -33,7 +33,7 @@
     },
     {
       "question": "Result of (1 + 'undefined')",
-      "answer": "1undefined"
+      "answer": "\"1undefined\""
     },
     {
       "question": "<p>Result of the below</p><p>let bool = true;</p><p>1. bool + 0</p><p>2. bool + ' kanye'</p><p>3. bool + true</p><p>4. bool + false</p>",
