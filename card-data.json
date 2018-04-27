@@ -138,6 +138,14 @@
     {
       "question": "What is context?",
       "answer": "this - the value of this is the context"
+    },
+    {
+      "question": "Ways to find an element\"s parent, child, and to remove an element",
+      "answer": "<p>element.parentNode</p> <p>element.childNodes</p> <p>element.removeChild</p>"
+    },
+    {
+      "question": "How to select first and last children of an element?",
+      "answer": "<p>parentNode.firstElementChild</p><p>parentNode.lastElementChild</p><p>Note: No () after statement</p>"
     }
   ],
   "cssQuestions": [
