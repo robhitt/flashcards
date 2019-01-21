@@ -105,7 +105,7 @@
     },
     {
       "question": "How would you copy data from one obect to another?",
-      "answer": "const object2 = Object.assign({}, object1);"
+      "answer": "<p>const object2 = Object.assign({}, object1);</p> <p>const object 2 = { ...object1 }; (ES2018)</p>"
     },
     {
       "question": "What are the 9 native object constructors in JS?",
