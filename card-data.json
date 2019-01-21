@@ -125,7 +125,7 @@
     },
     {
       "question": "How would one iterate through the properties of an object",
-      "answer": "<p>for (let prop in name) {</p> <p>console.log(name[prop]);</p> <p>{</p>"
+      "answer": "<p>for (let prop in name) {</p> <p>console.log(name[prop]);</p> <p>}</p>"
     },
     {
       "question": "How to check if property exists on an object",
