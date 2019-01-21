@@ -140,7 +140,7 @@
       "answer": "this - the value of this is the context"
     },
     {
-      "question": "Ways to find an element\"s parent, child, and to remove an element",
+      "question": "Ways to find an element's parent, child, and to remove an element",
       "answer": "<p>element.parentNode</p> <p>element.childNodes</p> <p>element.removeChild</p>"
     },
     {
